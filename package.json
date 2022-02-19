@@ -14,7 +14,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=1075acf53519"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -32,6 +33,7 @@
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7",
     "babel-loader": "^8.2.3",
+    "chromatic": "^6.4.3",
     "npm-run-all": "^4.1.5",
     "rollup-plugin-chrome-extension": "^4.0.1-15",
     "typescript": "^4.5.4",
