@@ -7,7 +7,7 @@
     "start:vite": "vite",
     "start:tsc:dev": "tsc --watch",
     "start:web-ext": "yarn run start:web-ext:chrome",
-    "start:web-ext:chrome": "wait-on dist/manifest.json && web-ext run --source-dir ./dist --target=chromium --start-url=chrome://newtab --keep-profile-changes",
+    "start:web-ext:chrome": "wait-on dist/manifest.json && web-ext run --source-dir ./dist --target=chromium --start-url=chrome://newtab --keep-profile-changes --chromium-profile='./utils/helpers/chrome-profile'",
     "tsc": "tsc",
     "clean": "rm -rf ./dist",
     "dev": "yarn run start",
