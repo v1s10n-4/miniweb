@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import { FC, useState } from 'react';
 import logo from './logo.svg'
 import './App.css'
 
-function App() {
+export const App: FC = () => {
   const [count, setCount] = useState(0)
+
 
   return (
     <div className="App">
