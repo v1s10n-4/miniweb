@@ -12,6 +12,7 @@
     "clean": "rm -rf ./dist",
     "dev": "yarn run start",
     "build": "tsc && vite build",
+    "pack": "web-ext build -s dist",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
