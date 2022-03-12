@@ -1966,6 +1966,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mdx-js/react@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@mdx-js/react@npm:2.0.0"
+  dependencies:
+    "@types/mdx": ^2.0.0
+    "@types/react": ">=16"
+  peerDependencies:
+    react: ">=16"
+  checksum: 4d47ac0418eb9820527829838aaf508a2cdea82f7be8c62b4f739bb2a439f98556360dcdf4cef74f7db615f3e0c05e28353c4b5b182bc36e1b920893f54670f4
+  languageName: node
+  linkType: hard
+
 "@mdx-js/util@npm:1.6.22":
   version: 1.6.22
   resolution: "@mdx-js/util@npm:1.6.22"
@@ -2214,7 +2226,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-docs@npm:6.4.19":
+"@storybook/addon-docs@npm:6.4.19, @storybook/addon-docs@npm:^6.4.19":
   version: 6.4.19
   resolution: "@storybook/addon-docs@npm:6.4.19"
   dependencies:
@@ -3470,6 +3482,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/mdx@npm:^2.0.0":
+  version: 2.0.1
+  resolution: "@types/mdx@npm:2.0.1"
+  checksum: 521ee9f976af45859a4dd60b159e1cc09109de49ec5570fe70f34cddb0a7b5472b87c1bea743429270398207a997821dec34fd7bd63cbc2a1e5f2f6c701dd1c2
+  languageName: node
+  linkType: hard
+
 "@types/minimatch@npm:*, @types/minimatch@npm:^3.0.3":
   version: 3.0.5
   resolution: "@types/minimatch@npm:3.0.5"
@@ -3583,6 +3602,17 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: bf04d3c2894559012710d595553e12b422d3b91cd8f4f7e122d8cb044ba9c2ba17f6e8a4e09581359cc5509ddc59cd8c8fabd6774f3505a40a45393f074d6e6e
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:>=16":
+  version: 17.0.40
+  resolution: "@types/react@npm:17.0.40"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: 24d1b210b5bf3c7d49f9a7fe5490db02e005a1d989045a2d67528347557dd0bcb0d7bcf96088152697e97521ac4c9506d1357ee48a2b7d4e701c70d838dc7284
   languageName: node
   linkType: hard
 
@@ -5954,7 +5984,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.0.4, core-js@npm:^3.6.5, core-js@npm:^3.8.2":
+"core-js@npm:^3.0.4, core-js@npm:^3.21.1, core-js@npm:^3.6.5, core-js@npm:^3.8.2":
   version: 3.21.1
   resolution: "core-js@npm:3.21.1"
   checksum: d68eddd831340ad5b24ac29c72fda022a43b17f194c4278b6b875a843283d316502cb4abd07f28631d6ebc4387f66aa06e2b1b3c8fd7e08096a751b5c63f6889
@@ -10982,7 +11012,9 @@ __metadata:
   resolution: "miniweb@workspace:."
   dependencies:
     "@babel/core": ^7.17.5
+    "@mdx-js/react": ^2.0.0
     "@storybook/addon-actions": ^6.4.19
+    "@storybook/addon-docs": ^6.4.19
     "@storybook/addon-essentials": ^6.4.19
     "@storybook/addon-interactions": ^6.4.19
     "@storybook/addon-links": ^6.4.19
@@ -10993,6 +11025,7 @@ __metadata:
     "@vitejs/plugin-react": ^1.0.7
     babel-loader: ^8.2.3
     chromatic: ^6.4.3
+    core-js: ^3.21.1
     npm-run-all: ^4.1.5
     react: ^17.0.2
     react-dom: ^17.0.2
