@@ -34,5 +34,8 @@ dist-ssr
 # chrome profile
 /utils/helpers/
 
+# web-ext build dir
+/web-ext-artifacts/
+
 # storybook build
 /storybook-static/
