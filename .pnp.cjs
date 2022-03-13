@@ -55,6 +55,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.5.1"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:17.0.2"],\
+            ["redux-observable", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:2.0.0"],\
             ["rollup-plugin-chrome-extension", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:4.0.1-16"],\
             ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"],\
             ["vite", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:2.8.4"],\
@@ -15606,6 +15607,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.5.1"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:17.0.2"],\
+            ["redux-observable", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:2.0.0"],\
             ["rollup-plugin-chrome-extension", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:4.0.1-16"],\
             ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"],\
             ["vite", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:2.8.4"],\
@@ -18328,6 +18330,30 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["redux-observable", [\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/redux-observable-npm-2.0.0-54e611aff8-ad5c23019e.zip/node_modules/redux-observable/",\
+          "packageDependencies": [\
+            ["redux-observable", "npm:2.0.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:2.0.0", {\
+          "packageLocation": "./.yarn/__virtual__/redux-observable-virtual-02b843bc65/0/cache/redux-observable-npm-2.0.0-54e611aff8-ad5c23019e.zip/node_modules/redux-observable/",\
+          "packageDependencies": [\
+            ["redux-observable", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:2.0.0"],\
+            ["@types/redux", null],\
+            ["redux", null],\
+            ["rxjs", "npm:7.5.5"],\
+            ["tslib", "npm:2.1.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/redux",\
+            "redux"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["refractor", [\
         ["npm:3.5.0", {\
           "packageLocation": "./.yarn/cache/refractor-npm-3.5.0-b381207772-e8e8bfe8fc.zip/node_modules/refractor/",\
@@ -20574,6 +20600,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/tslib-npm-1.14.1-102499115e-dbe628ef87.zip/node_modules/tslib/",\
           "packageDependencies": [\
             ["tslib", "npm:1.14.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.1.0", {\
+          "packageLocation": "./.yarn/cache/tslib-npm-2.1.0-81c9ac9b82-aa189c8179.zip/node_modules/tslib/",\
+          "packageDependencies": [\
+            ["tslib", "npm:2.1.0"]\
           ],\
           "linkType": "HARD"\
         }],\
