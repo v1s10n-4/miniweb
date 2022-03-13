@@ -48,6 +48,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-loader", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:8.2.3"],\
             ["chromatic", "npm:6.4.3"],\
             ["core-js", "npm:3.21.1"],\
+            ["husky", "npm:7.0.4"],\
             ["npm-run-all", "npm:4.1.5"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:17.0.2"],\
@@ -12512,6 +12513,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["husky", [\
+        ["npm:7.0.4", {\
+          "packageLocation": "./.yarn/cache/husky-npm-7.0.4-917ba035c6-c6ec4af63d.zip/node_modules/husky/",\
+          "packageDependencies": [\
+            ["husky", "npm:7.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["iconv-lite", [\
         ["npm:0.4.24", {\
           "packageLocation": "./.yarn/cache/iconv-lite-npm-0.4.24-c5c4ac6695-bd9f120f5a.zip/node_modules/iconv-lite/",\
@@ -14832,6 +14842,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-loader", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:8.2.3"],\
             ["chromatic", "npm:6.4.3"],\
             ["core-js", "npm:3.21.1"],\
+            ["husky", "npm:7.0.4"],\
             ["npm-run-all", "npm:4.1.5"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:17.0.2"],\
