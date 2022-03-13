@@ -11729,6 +11729,7 @@ __metadata:
     react: ^17.0.2
     react-dom: ^17.0.2
     redux-observable: ^2.0.0
+    reduxed-chrome-storage: ^2.4.8
     rollup-plugin-chrome-extension: ^4.0.1-15
     typescript: ^4.5.4
     vite: ^2.8.0
@@ -13976,6 +13977,15 @@ __metadata:
   peerDependencies:
     redux: ">=4 <5"
   checksum: ad5c23019e662541339d5dadb8cb9418d4c29499b52c8557a2a2fb0c3384af0fe3640db124176712d2e60c997bd12c418291ff7d668f01a14d2c553dd191ddd6
+  languageName: node
+  linkType: hard
+
+"reduxed-chrome-storage@npm:^2.4.8":
+  version: 2.4.8
+  resolution: "reduxed-chrome-storage@npm:2.4.8"
+  peerDependencies:
+    redux: ^4
+  checksum: e590b8d853a724f18d065399df051aa746ce0c68f4bd7ede1ba3294ec687c95b0001eaf32c610a41206eac044c8be419e34c40010df0197aa8b3bf1d4ea13ca6
   languageName: node
   linkType: hard
 

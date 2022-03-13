@@ -56,6 +56,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:17.0.2"],\
             ["redux-observable", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:2.0.0"],\
+            ["reduxed-chrome-storage", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:2.4.8"],\
             ["rollup-plugin-chrome-extension", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:4.0.1-16"],\
             ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"],\
             ["vite", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:2.8.4"],\
@@ -15608,6 +15609,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:17.0.2"],\
             ["redux-observable", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:2.0.0"],\
+            ["reduxed-chrome-storage", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:2.4.8"],\
             ["rollup-plugin-chrome-extension", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:4.0.1-16"],\
             ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"],\
             ["vite", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:2.8.4"],\
@@ -18346,6 +18348,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["redux", null],\
             ["rxjs", "npm:7.5.5"],\
             ["tslib", "npm:2.1.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/redux",\
+            "redux"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["reduxed-chrome-storage", [\
+        ["npm:2.4.8", {\
+          "packageLocation": "./.yarn/cache/reduxed-chrome-storage-npm-2.4.8-864cc71a76-e590b8d853.zip/node_modules/reduxed-chrome-storage/",\
+          "packageDependencies": [\
+            ["reduxed-chrome-storage", "npm:2.4.8"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:2.4.8", {\
+          "packageLocation": "./.yarn/__virtual__/reduxed-chrome-storage-virtual-3852e1447d/0/cache/reduxed-chrome-storage-npm-2.4.8-864cc71a76-e590b8d853.zip/node_modules/reduxed-chrome-storage/",\
+          "packageDependencies": [\
+            ["reduxed-chrome-storage", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:2.4.8"],\
+            ["@types/redux", null],\
+            ["redux", null]\
           ],\
           "packagePeers": [\
             "@types/redux",\
