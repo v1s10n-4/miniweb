@@ -3,10 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "start": "yarn run clean && npm-run-all -p start:web-ext:chrome start:vite start:tsc:dev",
+    "start": "yarn run clean && npm-run-all -p start:web-ext start:vite start:tsc:dev",
     "start:vite": "vite",
     "start:tsc:dev": "tsc --watch",
-    "start:web-ext": "yarn run start:web-ext:chrome",
+    "start:web-ext": "yarn run profile:chrome:create && yarn run start:web-ext:chrome",
+    "profile:chrome:create": "unzip -n utils/chrome-profile.zip -d utils",
     "start:web-ext:chrome": "wait-on dist/manifest.json && web-ext run --source-dir ./dist --target=chromium --start-url=chrome://newtab --keep-profile-changes --chromium-profile='./utils/helpers/chrome-profile'",
     "tsc": "tsc",
     "clean": "rm -rf ./dist",
