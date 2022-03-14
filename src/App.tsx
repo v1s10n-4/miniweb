@@ -2,20 +2,18 @@ import { FC, useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "./store/reducers/root";
 
 export const App: FC = () => {
   const dispatch = useDispatch();
-  const fesse = useSelector((state) => {
-    console.log(state);
-    return state.PingReducer.isPinging;
-  });
+  const isPinging = useSelector((state: RootState) => state.ping.isPinging);
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>
-        <p>isPinging value: {String(fesse)}</p>
+        <p>isPinging value: {String(isPinging)}</p>
         <p>
           <button type="button" onClick={() => dispatch({ type: "PING" })}>
             Click to ping

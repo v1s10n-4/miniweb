@@ -3,16 +3,17 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { Provider } from "react-redux";
-import store from "./store/store";
+import configureStore from "./store/store";
+import DevTools from "./utils/DevTools/ReduxDevTools";
 
-// const store = await initStore();
-
+const store = configureStore();
 console.log(store);
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
+  <Provider store={store}>
+    <React.StrictMode>
       <App />
-    </Provider>
-  </React.StrictMode>,
+    </React.StrictMode>
+    <DevTools />
+  </Provider>,
   document.getElementById("root")
 );

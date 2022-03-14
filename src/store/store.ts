@@ -1,34 +1,33 @@
-import reduxedStorageCreatorFactory from "reduxed-chrome-storage";
-import { applyMiddleware, createStore } from "redux";
-import { REDUXED_STORE_ROOT_KEY } from "../constants";
+// import reduxedStorageCreatorFactory from "reduxed-chrome-storage";
+import { applyMiddleware, compose, createStore } from "redux";
+// import { REDUXED_STORE_ROOT_KEY } from "../constants";
 import { createEpicMiddleware } from "redux-observable";
 import RootReducer from "./reducers";
 import RootEpic from "./epics";
-import { composeWithDevTools } from "@redux-devtools/extension";
-import PingReducer from "./reducers/ping";
+import DevTools from "../utils/DevTools/ReduxDevTools";
 
-const reduxedStorageCreatorFactoryOptions = {
-  createStore,
-  // namespace: "browser",
-  storageKey: REDUXED_STORE_ROOT_KEY,
-  changeListener: console.log,
-  errorListener: console.error,
-};
+// const reduxedStorageCreatorFactoryOptions = {
+//   createStore,
+//   namespace: "browser",
+//   storageKey: REDUXED_STORE_ROOT_KEY,
+//   changeListener: console.log,
+//   errorListener: console.error,
+// };
 
 const epicMiddleware = createEpicMiddleware();
 
-// export const initStore = async () => {
-// const reduxedStorageCreator = reduxedStorageCreatorFactory(
-//   reduxedStorageCreatorFactoryOptions
-// );
-// const store = await reduxedStorageCreator(
-const store = createStore(
-  RootReducer,
-  // { isPinging: false },
-  applyMiddleware(epicMiddleware)
+const enhancer = compose(
+  applyMiddleware(epicMiddleware),
+  DevTools.instrument()
 );
-epicMiddleware.run(RootEpic);
-// return store;
-// };
 
-export default store;
+export const configureStore = () => {
+  const store = createStore(
+    RootReducer,
+    { ping: { isPinging: false } },
+    enhancer
+  );
+  epicMiddleware.run(RootEpic);
+  return store;
+};
+export default configureStore;

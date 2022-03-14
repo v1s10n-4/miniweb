@@ -1,6 +1,10 @@
 import { Action } from "redux";
 
-export const PingReducer = (state = { isPinging: false }, action: Action) => {
+export const defaultPingState = { isPinging: false };
+
+export type DefaultPingState = typeof defaultPingState;
+
+export const PingReducer = (state = defaultPingState, action: Action) => {
   switch (action.type) {
     case "PING":
       return { isPinging: true };

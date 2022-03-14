@@ -1,6 +1,10 @@
 import { combineReducers } from "redux";
-import PingReducer from "./ping";
+import PingReducer, { DefaultPingState } from "./ping";
+
+export type RootState = {
+  ping: DefaultPingState;
+};
 
 export const RootReducer = combineReducers({
-  PingReducer,
+  ping: PingReducer,
 });
