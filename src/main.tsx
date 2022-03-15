@@ -6,8 +6,9 @@ import { Provider } from "react-redux";
 import configureStore from "./store/store";
 import DevTools from "./utils/DevTools/ReduxDevTools";
 
-const store = configureStore();
+const store = await configureStore();
 console.log(store);
+
 ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
