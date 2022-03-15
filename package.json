@@ -23,11 +23,20 @@
   },
   "dependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
+    "redux-observable": "^2.0.0",
+    "reduxed-chrome-storage": "^2.4.8",
+    "rxjs": "^7.5.5"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "@mdx-js/react": "^2.0.0",
+    "@redux-devtools/core": "^3.11.0",
+    "@redux-devtools/dock-monitor": "^2.1.0",
+    "@redux-devtools/log-monitor": "^3.1.0",
+    "@redux-devtools/slider-monitor": "^3.1.1",
     "@storybook/addon-actions": "^6.4.19",
     "@storybook/addon-docs": "^6.4.19",
     "@storybook/addon-essentials": "^6.4.19",
@@ -37,6 +46,8 @@
     "@storybook/testing-library": "^0.0.9",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
+    "@types/react-redux": "^7.1.23",
+    "@types/remote-redux-devtools": "^0.5.5",
     "@vitejs/plugin-react": "^1.0.7",
     "babel-loader": "^8.2.3",
     "chromatic": "^6.4.3",
@@ -46,11 +57,14 @@
     "lint-staged": ">=10",
     "npm-run-all": "^4.1.5",
     "prettier": "2.5.1",
+    "react-is": "^17.0.2",
     "rollup-plugin-chrome-extension": "^4.0.1-15",
+    "styled-components": "^5.3.3",
     "typescript": "^4.5.4",
     "vite": "^2.8.0",
     "wait-on": "^6.0.1",
-    "web-ext": "^6.7.0"
+    "web-ext": "^6.7.0",
+    "webextension-polyfill": "^0.8.0"
   },
   "packageManager": "yarn@3.2.0",
   "lint-staged": {

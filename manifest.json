@@ -5,5 +5,7 @@
   "action": { "default_popup": "index.html" },
   "chrome_url_overrides": {
     "newtab": "./index.html"
-  }
+  },
+  "web_accessible_ressources": ["browser-polyfill.min.js"],
+  "permissions": ["storage"]
 }
