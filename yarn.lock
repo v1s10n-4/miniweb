@@ -12233,6 +12233,8 @@ __metadata:
     react-redux: ^7.2.6
     redux: ^4.1.2
     redux-observable: ^2.0.0
+    redux-persist: ^6.0.0
+    redux-persist-chrome-storage: ^1.0.5
     reduxed-chrome-storage: ^2.4.8
     rollup-plugin-chrome-extension: ^4.0.1-15
     rxjs: ^7.5.5
@@ -14609,6 +14611,24 @@ __metadata:
   peerDependencies:
     redux: ">=4 <5"
   checksum: ad5c23019e662541339d5dadb8cb9418d4c29499b52c8557a2a2fb0c3384af0fe3640db124176712d2e60c997bd12c418291ff7d668f01a14d2c553dd191ddd6
+  languageName: node
+  linkType: hard
+
+"redux-persist-chrome-storage@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "redux-persist-chrome-storage@npm:1.0.5"
+  peerDependencies:
+    redux-persist: ">=5.0"
+  checksum: 88a3990e4852e6909e30e2cbbbd7b1d634b19d7502a3d046a4510c16355470eabcd595ae76b31982105f6795022af02b827270dac7276c2a6acd901e5ed674c7
+  languageName: node
+  linkType: hard
+
+"redux-persist@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "redux-persist@npm:6.0.0"
+  peerDependencies:
+    redux: ">4.0.0"
+  checksum: edaf10dbf17351ce8058d0802357adae8665b3a1ff39371834e37838ddbe1a79cccbc717b8ba54acb5307651ccf51d0f7dc1cbc8dbae0726ff952d11ef61c6b8
   languageName: node
   linkType: hard
 

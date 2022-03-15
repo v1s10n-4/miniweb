@@ -1,18 +1,20 @@
-// import reduxedStorageCreatorFactory from "reduxed-chrome-storage";
 import { applyMiddleware, compose, createStore } from "redux";
-// import { REDUXED_STORE_ROOT_KEY } from "../constants";
+import { REDUXED_STORE_ROOT_KEY } from "../constants";
 import { createEpicMiddleware } from "redux-observable";
 import RootReducer from "./reducers";
 import RootEpic from "./epics";
 import DevTools from "../utils/DevTools/ReduxDevTools";
+import { persistStore, persistReducer } from "redux-persist";
+// @ts-ignore
+import createChromeStorage from "redux-persist-chrome-storage";
 
-// const reduxedStorageCreatorFactoryOptions = {
-//   createStore,
-//   namespace: "browser",
-//   storageKey: REDUXED_STORE_ROOT_KEY,
-//   changeListener: console.log,
-//   errorListener: console.error,
-// };
+const config = {
+  key: REDUXED_STORE_ROOT_KEY,
+  // @ts-ignore
+  storage: createChromeStorage(window.chrome, "local"),
+};
+
+const persistedReducer = persistReducer(config, RootReducer);
 
 const epicMiddleware = createEpicMiddleware();
 
@@ -22,12 +24,13 @@ const enhancer = compose(
 );
 
 export const configureStore = () => {
-  const store = createStore(
-    RootReducer,
+  let store = createStore(
+    persistedReducer,
     { ping: { isPinging: false } },
     enhancer
   );
+  let persistor = persistStore(store);
   epicMiddleware.run(RootEpic);
-  return store;
+  return { store, persistor };
 };
 export default configureStore;

@@ -65,6 +65,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-redux", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:7.2.6"],\
             ["redux", "npm:4.1.2"],\
             ["redux-observable", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:2.0.0"],\
+            ["redux-persist", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:6.0.0"],\
+            ["redux-persist-chrome-storage", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:1.0.5"],\
             ["reduxed-chrome-storage", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:2.4.8"],\
             ["rollup-plugin-chrome-extension", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:4.0.1-16"],\
             ["rxjs", "npm:7.5.5"],\
@@ -16317,6 +16319,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-redux", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:7.2.6"],\
             ["redux", "npm:4.1.2"],\
             ["redux-observable", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:2.0.0"],\
+            ["redux-persist", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:6.0.0"],\
+            ["redux-persist-chrome-storage", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:1.0.5"],\
             ["reduxed-chrome-storage", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:2.4.8"],\
             ["rollup-plugin-chrome-extension", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:4.0.1-16"],\
             ["rxjs", "npm:7.5.5"],\
@@ -19282,6 +19286,54 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [\
             "@types/redux",\
             "redux"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["redux-persist", [\
+        ["npm:6.0.0", {\
+          "packageLocation": "./.yarn/cache/redux-persist-npm-6.0.0-56dad69feb-edaf10dbf1.zip/node_modules/redux-persist/",\
+          "packageDependencies": [\
+            ["redux-persist", "npm:6.0.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:6.0.0", {\
+          "packageLocation": "./.yarn/__virtual__/redux-persist-virtual-daf6a855d8/0/cache/redux-persist-npm-6.0.0-56dad69feb-edaf10dbf1.zip/node_modules/redux-persist/",\
+          "packageDependencies": [\
+            ["redux-persist", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:6.0.0"],\
+            ["@types/react", "npm:17.0.39"],\
+            ["@types/redux", null],\
+            ["react", "npm:17.0.2"],\
+            ["redux", "npm:4.1.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "@types/redux",\
+            "react",\
+            "redux"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["redux-persist-chrome-storage", [\
+        ["npm:1.0.5", {\
+          "packageLocation": "./.yarn/cache/redux-persist-chrome-storage-npm-1.0.5-ea4bc24382-88a3990e48.zip/node_modules/redux-persist-chrome-storage/",\
+          "packageDependencies": [\
+            ["redux-persist-chrome-storage", "npm:1.0.5"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:1.0.5", {\
+          "packageLocation": "./.yarn/__virtual__/redux-persist-chrome-storage-virtual-0f842a67bb/0/cache/redux-persist-chrome-storage-npm-1.0.5-ea4bc24382-88a3990e48.zip/node_modules/redux-persist-chrome-storage/",\
+          "packageDependencies": [\
+            ["redux-persist-chrome-storage", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:1.0.5"],\
+            ["@types/redux-persist", null],\
+            ["redux-persist", "virtual:496c690b9ca04e303051f98628501c997c1f1217806de5f22e942444aa9269fbbcd48f63784d5130ffc8a61220aef47ed82a4b9f63abc05c1c7c39af39f3c8a9#npm:6.0.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/redux-persist",\
+            "redux-persist"\
           ],\
           "linkType": "HARD"\
         }]\
